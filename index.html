@@ -1,0 +1,526 @@
+
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie6" language="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" language="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" language="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" language="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="" language="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Base64 Image Encoder</title>
+
+
+    <meta name="description" content="Optimize your images and convert them to base64 online. Drag & Drop your files, copy to clipboard with a click and use the result in HTML and CSS.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dominik Hanke (www.dominik-hanke.de)" />
+    <meta name="google-site-verification" content="_Qx_yVYLrO0ToyccVzvN519rYxKKhfQM3QXkJAZHBLE" />
+    <meta name="robots" content="index,follow">
+
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://www.base64-image.de/vendor/font-aweseome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.base64-image.de/build/css/main-46560d880e.css" />
+
+
+    <meta property="og:description" content="Optimize your images and convert them to base64 online. Drag & Drop your files, copy to clipboard with a click and use the result in HTML and CSS." />
+    <meta property="og:image" content="https://www.base64-image.de/build/img/base64-image-f4086dbee9.jpg" />
+
+    <meta property="og:title" content="Base64 Image Encoder" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Base64 Image Encoder" />
+    <meta property="og:url" content="https://www.base64-image.de" />
+
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@noreading" />
+    <meta property="twitter:description" content="Optimize your images and convert them to base64 online. Drag & Drop your files, copy to clipboard with a click and use the result in HTML and CSS." />
+    <meta property="twitter:title" content="Base64 Image Encoder" />
+
+    <meta property="twitter:image:src" content="https://www.base64-image.de/build/img/base64-image-f4086dbee9.jpg" />
+
+
+    <script src="https://www.base64-image.de/build/js/main-c92996b903.js"></script>
+
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21166597-3']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+
+<!-- ~~~~~~~~ -->
+<!--  Header  -->
+<!-- ~~~~~~~~ -->
+
+<div id="header">
+    <div class="container">
+        <div class="row no-gutter">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <h1 id="header-logo">
+                    <a id="header-logo-img"
+                       href="/">
+                        <img src="https://www.base64-image.de/build/img/base64-image-logo-3eb23a9eef.png"
+                             alt="Base64 Image Encoder"
+                             width="126"
+                             height="44">
+                    </a>
+                </h1>
+            </div>
+            <!-- /col -->
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <!-- navigation: mobile -->
+                <a id="menu-button-mobile"
+                   class="fa fa-bars pull-right"
+                   href="javascript:base64Global.prototype.toggleMobileMenu();"></a>
+
+                <!-- navigation: desktop + tablet -->
+                <ul id="menu" class="pull-right">
+                    <li class="menu-item  menu-item-current ">
+    <a href="https://www.base64-image.de">
+        Home
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/tutorial">
+        Tutorial
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/faq">
+        FAQ
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/contact/send">
+        Contact
+    </a>
+</li>
+
+                </ul>
+            </div><!-- /col -->
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div><!-- /header -->
+<div id="menu-container-mobile">
+    <div class="container">
+        <ul id="menu-mobile">
+            <li class="menu-item  menu-item-current ">
+    <a href="https://www.base64-image.de">
+        Home
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/tutorial">
+        Tutorial
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/faq">
+        FAQ
+    </a>
+</li>
+<li class="menu-item ">
+    <a href="https://www.base64-image.de/contact/send">
+        Contact
+    </a>
+</li>
+
+        </ul>
+    </div>
+</div>
+
+<div id="drag-area">
+
+    <div class="container">
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+            <img id="mr-base64"
+                 src="https://www.base64-image.de/build/img/mr-base64-482fa1f767.png"
+                 alt="Mr. Base"
+                 width="266"
+                 height="358">
+        </div><!-- /col -->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+            <h2 id="drag-box-title">
+                Convert your images<br>
+                to base64
+            </h2><!-- /#drag-box-title -->
+
+            <!-- ~~~~~~~~~~~~~ -->
+            <!--  Upload form  -->
+            <!-- ~~~~~~~~~~~~~ -->
+
+            <noscript>
+                <style>
+                    #drag-target-box {
+                        display: none;
+                    }
+                </style>
+            </noscript>
+
+            <div id="drag-target-box"
+                 class="row dz-clickable"
+                 data-max-file-size="1"
+                 data-max-file-count="20"
+                 data-token="Dhysu3h4sADAp2p4lJwo7bByazJaqnq0MmfoWKV0">
+                <div id="drag-target" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                    Drag &amp; drop images anywhere
+                </div><!-- /#drag-target -->
+
+                <div id="click-target" class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    or click here
+                </div><!-- /#file-button -->
+
+            </div><!-- /#drag-target-box -->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!--  Upload form for smartphones  -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <div id="mobile-form">
+                <form action="https://www.base64-image.de/encode" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+                    <input type="hidden" name="_token" id="csrf-token" value="Dhysu3h4sADAp2p4lJwo7bByazJaqnq0MmfoWKV0" />
+
+                    <div class="input-frame">
+                        <button type="button" class="btn btn-default input-replace">Select a file ...</button>
+                        <input class="input" type="file" name="image" />
+                    </div><br>
+                    <button type="submit"
+                            id="mobile-form-submit"
+                            class="btn btn-default">encode image</button>
+                </form>
+            </div><!-- /#drag-target-box -->
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!--  Fallback Upload form  -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~ -->
+
+            <noscript>
+                <style>
+                    #fallback-form {
+                        display: block;
+                    }
+                    #fallback-form .input-frame {
+                        top: 0;
+                    }
+                </style>
+            </noscript>
+
+            <div id="fallback-form" class="row">
+                <form action="https://www.base64-image.de/encode" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="MAX_FILE_SIZE" value="1000000" />
+                    <input type="hidden" name="_token" id="csrf-token" value="Dhysu3h4sADAp2p4lJwo7bByazJaqnq0MmfoWKV0" />
+                    <div id="drag-target" class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                        <div class="input-frame">
+                            <button type="button" class="btn btn-default input-replace">Select a file ...</button>
+                            <input class="input" type="file" name="image" id="fallback-form-file" />
+                        </div>
+                    </div><!-- /#drag-target -->
+
+                    <button id="click-target"
+                            type="submit"
+                            class="fallback-form-submit col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        encode
+                    </button><!-- /#file-button -->
+                </form>
+            </div><!-- /#drag-target-box -->
+
+            <img id="convert-arrow" src="https://www.base64-image.de/build/img/long-arrow-right-08ced20507.png" alt="" width="164" height="74">
+        </div><!-- /col -->
+    </div>
+
+</div><!-- /#drag-area -->
+
+<div id="encoding-result-box" class="container content-box">
+
+    <!-- ~~~~~~~~~~~~~~~~ -->
+    <!--  Encoded result  -->
+    <!-- ~~~~~~~~~~~~~~~~ -->
+
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="content-box-title">
+                Encoding
+            </div>
+        </div><!-- /col -->
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="encoding-result-help pull-right">
+                <a id="encoding-result-help-link" href="javascript://">
+                    <span class="fa fa-question-circle"></span>
+                </a>
+            </div>
+        </div><!-- /col -->
+    </div><!-- /row -->
+    <div id="encoding-result-description" class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <strong><span class="fa fa-code"></span> show code</strong><br>
+            opens a modal with image preview, usage<br>
+            examples, image width &amp; height, ...
+        </div><!-- /col -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <strong><span class="fa fa-files-o"></span> copy image</strong><br>
+            copies this base64 code to your clipboard:<br>
+            data:image/jpeg;base64,/9j/4AA...
+        </div><!-- /col -->
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <strong><span class="fa fa-files-o"></span> copy css</strong><br>
+            copies this base64 code to your clipboard:<br>
+            url('data:image/jpeg;base64,/9j/4AA...
+        </div><!-- /col -->
+    </div><!-- /row -->
+
+    <div class="dz-preview dz-preview-header row no-gutter">
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">filename</div>
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 preview-header-size">
+            <span class="pull-right">size</span>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 preview-header-progress">progress</div>
+        <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 preview-header-size">
+            <span class="pull-right">converted</span>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">&nbsp;</div>
+    </div>
+
+</div><!-- /container -->
+
+    <div class="container content-box">
+        <div class="row description">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Base64 Responsive Startseite Top -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-0979739771869527"
+                 data-ad-slot="6955564792"
+                 data-ad-format="auto"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div><!-- /row -->
+    </div><!-- /.container -->
+
+    <br>
+
+<div class="container content-box">
+    <div class="row description">
+        <!-- ~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--  Description: Upload  -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h3 class="content-box-title">File Formats</h3>
+            <p>
+                You can upload up to 20 images (max. 1.00 MB each) as JPG, PNG, GIF, BMP or SVG.<br>
+                <br>
+                Please note that Internet Explorer 8 has a limit of 32 KB for <a href="http://en.wikipedia.org/wiki/Data_URI_scheme" target="_blank">data URI</a>.
+                Versions below have no support.
+            </p>
+        </div><!-- /col -->
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+        <!--  Image Optimization  -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h3 class="content-box-title">Image optimization</h3>
+            <p>
+                We can optimize your JPEG &amp; PNG images, using <a href="http://www.kokkonen.net/tjko/projects.html" target="_blank">jpegoptim</a> and
+                <a href="http://optipng.sourceforge.net/" target="_blank">optipng</a>. This will reduce the file without any visible impact
+                (in most cases).
+            </p>
+            <p>
+                Optimization status:
+            </p>
+            <p>
+                <select name="optimize-images" id="optimize-images" class="form-control">
+                    <option value="false">disabled</option>
+                    <option value="true" >enabled</option>
+                </select>
+            </p>
+        </div><!-- /col -->
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!--  Description: Browser Support -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h3 class="content-box-title">Browser Support</h3>
+
+            <p>
+                The <strong>encoded results</strong> are <strong>compatible</strong> with all of the following browsers and versions. Please send me a note if there are issues.
+            </p>
+
+            <ul id="browser-support">
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/chrome_24x24-a7ca66e6b4.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Google Chrome">Chrome 4+</li>
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/safari_24x24-4b9304e7c1.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Apple Safari">Safari 3.1+</li>
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/firefox_24x24-9cb479bf41.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Mozilla Firefox">Firefox 2+</li>
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/opera_24x24-1e135b7c74.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Opera">Opera 9+</li>
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/edge_24x24-11efc6ad6b.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Microsoft Edge">Edge
+                </li>
+                <li>
+                    <img src="https://www.base64-image.de/build/img/browser-icons/ie9-10_24x24-4a2e4800a5.png"
+                         alt=""
+                         width="24"
+                         height="24"
+                         title="Microsoft Internet Explorer">IE 8+
+                </li>
+            </ul>
+        </div><!-- /col -->
+
+    </div><!-- /row -->
+</div><!-- /.container -->
+
+
+<div id="show-code-modal-content"></div>
+<div style="display: none;">
+    <div id="show-code-modal">
+
+        <div class="clearfix">
+            <div id="show-code-image">
+                <img id="show-code-thumbnail"
+                     class="show-code-thumbnail-dark"
+                     src="">
+
+                <button type="button" id="show-code-toggle-background"
+                        class="btn btn-xs btn-default">
+                    <span class="fa fa-fw fa-lightbulb-o"></span>
+                    toggle background
+                </button>
+            </div>
+
+            <div id="show-code-fileinfo">
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="column-1">Filename:</td>
+                        <td class="column-2"><span id="show-code-filename"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="column-1">Filesize:</td>
+                        <td class="column-2"><span id="show-code-filesize"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="column-1">Encoded:</td>
+                        <td class="column-2"><span id="show-code-filesize-encoded"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="column-1">Width:</td>
+                        <td class="column-2"><span id="show-code-width"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="column-1">Height:</td>
+                        <td class="column-2"><span id="show-code-height"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="show-code-examples">
+
+            <div class="show-example-title clearfix">
+                For use in &lt;img&gt; elements:
+                <div class="pull-right">
+                    <button type="button"
+                            data-target="#show-example-image"
+                            class="btn btn-xs btn-default select-button">
+                        <span class="fa fa-bars"></span> select all
+                    </button>
+                    <button type="button"
+                            data-target="#show-example-image"
+                            data-result="image"
+                            class="btn btn-xs btn-default dz-copy-button">
+                        <span class="fa fa-files-o"></span> copy to clipboard
+                    </button>
+                </div>
+            </div>
+
+            <div class="show-example-spinner" id="show-example-spinner-image">
+                <div class="fa fa-spinner fa-spin"></div>
+            </div>
+
+            <div class="show-code-area" id="show-example-image"></div>
+
+            <br>
+
+            <div class="show-example-title clearfix">
+                For use as CSS background:
+                <div class="pull-right">
+                    <button type="button"
+                            data-target="#show-example-css"
+                            class="btn btn-xs btn-default select-button">
+                        <span class="fa fa-bars"></span> select all
+                    </button>
+                    <button type="button"
+                            data-target="#show-example-css"
+                            data-result="css"
+                            class="btn btn-xs btn-default dz-copy-button">
+                        <span class="fa fa-files-o"></span> copy to clipboard
+                    </button>
+                </div>
+            </div>
+
+            <div class="show-example-spinner" id="show-example-spinner-background">
+                <div class="fa fa-spinner fa-spin"></div>
+            </div>
+
+            <div class="show-code-area" id="show-example-css"></div>
+
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- ~~~~~~~~ -->
+<!--  Footer  -->
+<!-- ~~~~~~~~ -->
+
+<div id="footer" class="container">
+
+    &copy; 2016 <a href="http://www.dominik-hanke.de" target="_aselank">Dominik Hanke</a>
+    - <a href="https://github.com/paulirish/browser-logos" target="_blank">Browser Icons</a>
+    by <a href="http://www.paulirish.com/" target="_blank">Paul Irish</a>
+    - Design by <a href="https://www.xing.com/profile/Paul_Treubrodt" target="_blank">Paul Treubrodt</a>
+
+</div><!-- /container -->
+
+<!-- Needed invisible container for execCommand('copy') function -->
+<div id="copy-area"></div>
+
+<div id="drag-overlay" onClick="base64.prototype.toggleDragOverlay('hide');"></div>
+<script src="https://www.base64-image.de/build/js/pages/index-e8aa2875c0.js"></script>
+
+</body>
+</html>
